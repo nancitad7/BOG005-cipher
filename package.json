@@ -1,8 +1,9 @@
 {
   "name": "cipher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/index.html",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "htmlhint": "htmlhint src/*.html test/*.html",
     "eslint": "eslint --ext .js src/ test/",

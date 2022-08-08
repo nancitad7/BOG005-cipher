@@ -1,0 +1,86 @@
+#fondo {
+
+    background-color: #D2F9D5;
+
+    /* para ingresar imagen */
+
+    background-image: url("https://image.shutterstock.com/image-photo/spring-background-green-tree-leaves-260nw-1009750807.jpg");
+
+    background-attachment: fixed;
+
+    background-position: center center;
+
+    height: 600px;
+
+    background-size: cover;
+}
+
+#caja_fondos {
+
+    background-color: #BFFCDD;
+
+    display: none;
+
+    margin: 60px 35px 15px 25px;
+
+    
+}
+
+h1 {
+
+    text-align: center;
+
+    padding: 100px;
+
+}
+.grid {
+
+    display: grid;
+
+    margin: auto auto;
+
+    padding: 20px;
+
+    color: #999;
+
+    grid-template-columns: 42% 10% 42%;
+
+    gap: 1em;
+
+    grid-template-rows: minmax(100px, auto);
+    justify-items: center;
+    
+}
+
+
+.nested-grid {
+
+    display: grid;
+
+    grid-template-columns: 2;
+
+    gap: 1em;
+
+    
+}
+.element2 {
+
+    align-self: center;
+    height: 20px;
+
+}
+.element4{
+    align-self: end;
+    height: 25px;
+    width: 50px;
+}
+.element5{
+    align-items: end;
+    height: 30px;
+    width: 70px;
+}
+.element6{
+    justify-content: end;
+    height: 30px;
+    width: 70px;
+}

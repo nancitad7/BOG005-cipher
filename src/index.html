@@ -1,14 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
-    <script src="index.js" type="module"></script>
-  </body>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cesar Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="fondo">
+  <div id="root">
+    <h1>CIFRADOS PARA LA PAZ</h1>
+    <!-- <img src="data:image/png;base64,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" alt="" srcset=""> -->
+    <article id="caja_principal"> Este contenido esta dirigito a todo aquel que desee contibuir con la paz,
+      tanto para quienes estan en el conflicto y deseen salir de esta guerra, volver a la vida y a la libertad,
+      como para quienes deseen apoyar a la reinsercion social ayudando y/o apoyando a quienes lo necesitan.
+      Gracias a ambos por construir un mejor pais.
+      Te ayudaremos a comunicarte cifradamente con personas y entidades que puedan apoyarte en el proceso.
+      <h2>instrucciones</h2>
+      <ol>
+        <li>da click en el boton iniciar</li>
+        <li>Escribe tu mensaje en el campo especificado</li>
+        <li>Elije el numero de desplazamiento de cifrado</li>
+        <li>click en el boton cifrar o descifrar segun necesidad</li>
+        <li>al terminar presiona terminar</li>
+      </ol>
+      <button id="mostrar" name="mostrar" value="mostrar">iniciar</button>
+
+    </article>
+    <section id="caja_fondos">
+
+      <div class="grid">
+        <input type="text" id="mensaje1" placeholder="escribe tu mensaje a cifrar" class="element1" />
+        <input type="number" id="desplazarse" placeholder="elije el cifrado" class="element2" size="4">
+        <input type="text" id="mensaje2" placeholder=" mensaje cifrado-descifrado" class="element3" />
+         <button type="button" id="cifrar" class="element4">cifrar</button>
+        <button type="button" id="descifrar" class="element5">descifrar</button>
+        <button id="ocultar" name="ocultar" value="ocultar" class="element6">terminar</button>
+      
+      </div>
+    </section>
+  </div>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
